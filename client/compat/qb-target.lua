@@ -188,7 +188,7 @@ exportHandler('AddTargetBone', function(bones, options)
         v.bones = bones
     end
 
-    exports.ox_target:addGlobalVehicle(options)
+    target.addGlobalVehicle(options)
 end)
 
 exportHandler('AddTargetEntity', function(entities, options)
@@ -258,4 +258,8 @@ end)
 
 exportHandler('RemoveGlobalPlayer', function(labels)
     target.removeGlobalPlayer(labels)
+end)
+
+exportHandler('RemoveTargetBone', function(bones, labels)
+    target.removeGlobalVehicle(labels)
 end)
